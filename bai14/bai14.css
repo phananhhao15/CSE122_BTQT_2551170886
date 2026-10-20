@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 16px;
+  background: #f1f5f1;
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.trang {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.tieuDe {
+  padding: 18px;
+  background: #2e7d32;
+  color: #ffeb3b;
+  text-align: center;
+}
+
+.tieuDe h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.gioiThieu {
+  margin: 0 24px;
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;
+  color: #1b5e20;
+  font-style: italic;
+  text-align: center;
+}
+
+.danhSach {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 18px;
+  padding: 28px 24px 12px;
+}
+
+.kyQuan {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.kyQuan:nth-child(even) {
+  position: relative;
+  top: 10px;
+}
+
+.kyQuan img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border: 1px solid #2e7d32;
+  border-radius: 6px;
+}
+
+.noiDung {
+  padding: 12px;
+}
+
+.noiDung h2 {
+  margin: 0 0 8px;
+  color: #1b5e20;
+  font-size: 17px;
+}
+
+.noiDung p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .danhSach {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 520px) {
+  .tieuDe h1 {
+    font-size: 22px;
+  }
+
+  .danhSach {
+    grid-template-columns: 1fr;
+    padding: 20px 16px;
+  }
+
+  .kyQuan:nth-child(even) {
+    top: 0;
+  }
+
+  .kyQuan img {
+    height: 200px;
+  }
+}

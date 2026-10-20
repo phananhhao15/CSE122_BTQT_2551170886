@@ -1,0 +1,41 @@
+.container {
+  width: 750px;
+  margin: 150px auto;
+}
+
+h1 {
+  color: #c2185b;
+  text-align: center;
+}
+
+.left {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+.left img {
+  width: 150px;
+}
+
+.right {
+  width: 70%;
+  float: left;
+}
+
+h2 {
+  background-color: #ffc0cb;
+  display: inline-block;
+}
+
+.gioithieu {
+  list-style-type: square;
+}
+.lienhe {
+  list-style-type: circle;
+}
+li {
+  margin-bottom: 10px;
+}
+.link {
+  text-align: right;
+}

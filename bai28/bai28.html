@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel & Tabs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-light">
+    <div class="container py-4">
+      <div id="slide" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="0"
+            class="active"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slide"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner rounded-3 shadow">
+          <div class="carousel-item active">
+            <img
+              src="../Anh/Bai28/1-vinh-ha-long.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 450px"
+              alt="Vịnh Hạ Long"
+            />
+            <div class="carousel-caption">
+              <h5>Vịnh Hạ Long</h5>
+              <p>Kỳ quan với hàng nghìn đảo đá vôi.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="../Anh/Bai28/2-son-doong.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 450px"
+              alt="Sơn Đoòng"
+            />
+            <div class="carousel-caption">
+              <h5>Hang Sơn Đoòng</h5>
+              <p>Hang động lớn nhất thế giới.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="../Anh/Bai28/3-thac-ban-gioc.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 450px"
+              alt="Thác Bản Giốc"
+            />
+            <div class="carousel-caption">
+              <h5>Thác Bản Giốc</h5>
+              <p>Thác nước hùng vĩ nơi biên giới.</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Trước</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sau</span>
+        </button>
+      </div>
+
+      <ul class="nav nav-pills mt-4" id="tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            data-bs-toggle="pill"
+            data-bs-target="#gioithieu"
+            type="button"
+            role="tab"
+          >
+            Giới thiệu
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="pill"
+            data-bs-target="#lichtrinh"
+            type="button"
+            role="tab"
+          >
+            Lịch trình
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="pill"
+            data-bs-target="#chiphi"
+            type="button"
+            role="tab"
+          >
+            Chi phí
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content bg-white p-3 mt-2 rounded-3 shadow-sm">
+        <div class="tab-pane fade show active" id="gioithieu" role="tabpanel">
+          Tour khám phá ba danh thắng nổi tiếng của Việt Nam: biển đảo, hang
+          động và thác nước.
+        </div>
+
+        <div class="tab-pane fade" id="lichtrinh" role="tabpanel">
+          Ngày 1: Hạ Long – Ngày 2: Phong Nha, Sơn Đoòng – Ngày 3: Cao Bằng, Bản
+          Giốc.
+        </div>
+
+        <div class="tab-pane fade" id="chiphi" role="tabpanel">
+          Dự kiến 6.500.000đ/người, đã gồm xe, khách sạn, ăn uống và vé tham
+          quan.
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

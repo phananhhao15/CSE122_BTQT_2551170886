@@ -1,0 +1,53 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 40px;
+}
+
+.khung-bang {
+  width: 800px;
+  margin: 0px auto;
+  background-color: #f7f2e1;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.anh-minh-hoa {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+}
+.noidung {
+  flex: 1;
+}
+h2 {
+  text-align: center;
+  color: #e65100;
+  margin: 20px auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+th {
+  background-color: #d9611f;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e8e1d5;
+  color: #333;
+}
+tr:nth-child(even) td {
+  background-color: #faf5e8;
+}
+td:first-child {
+  width: 60px;
+  text-align: center;
+}

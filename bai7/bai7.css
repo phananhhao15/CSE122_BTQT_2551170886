@@ -1,0 +1,72 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  margin: 0px;
+  padding: 20px;
+}
+
+.container {
+  width: 850px;
+  margin: 0px auto;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+  background-color: #c8102e;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sub-title {
+  background-color: #fbe3e8;
+  color: #c8102e;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.content-table {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+.content-table td {
+  vertical-align: top;
+  padding: 25px;
+}
+.col-left {
+  width: 45%;
+}
+
+.col-right {
+  width: 55%;
+  border-left: 1px solid #dcdcdc;
+  position: relative;
+}
+.col-right-empty {
+  width: 55%;
+  padding: 0;
+}
+
+.product-img {
+  float: right;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.product-img img {
+  width: 150px;
+  height: auto;
+}
+.section h3 {
+  color: #c8102e;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}

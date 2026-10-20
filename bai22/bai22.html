@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bai22.css" />
+  </head>
+  <body class="toi">
+    <main class="trang">
+      <header class="dau">
+        <h1>Che do toi / sang</h1>
+        <label class="gat" aria-label="Bat che do toi">
+          <input type="checkbox" id="nutGat" checked />
+          <span class="truot"></span>
+        </label>
+      </header>
+      <article class="the">
+        <h2>Bien CSS</h2>
+        <p>
+          Toan bo mau sac duoc khai bao trong <code>:root</code> va ghi de bang
+          class <code>.toi</code>
+        </p>
+      </article>
+      <article class="the">
+        <h2>Chuyển đổi bằng JavaScript</h2>
+        <p>
+          Nút gạt thêm/bỏ class <code>.toi</code> trên &lt;body&gt; — mọi thành
+          phần tự đổi màu.
+        </p>
+      </article>
+      <article class="the">
+        <h2>Chuyển màu mượt</h2>
+        <p>
+          Dùng <code>transition</code> để màu nền và chữ chuyển dần, không bị
+          giật.
+        </p>
+      </article>
+      <p class="ghichu" id="ghiChu">Day la giao dien o che do Toi (dangbat)</p>
+    </main>
+    <script>
+      const nut = document.getElementById("nutGat");
+      const ghiChu = document.getElementById("ghiChu");
+      nut.addEventListener("change", () => {
+        document.body.classList.toggle("toi", nut.checked);
+        ghiChu.textContent = nut.checked
+          ? "Day la giao dien o che do toi"
+          : "day la giao dien o che do sang";
+      });
+    </script>
+  </body>
+</html>

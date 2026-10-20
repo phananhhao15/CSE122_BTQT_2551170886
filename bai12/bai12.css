@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 40px 16px;
+  background: #eeeeee url("Anh/Bai12/Nen.gif") repeat;
+  font-family: "Times New Roman", Times, serif;
+}
+.khung {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.o-lich {
+  border: 1px solid #ccc;
+  background: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 16px 16px;
+}
+.o-lich p {
+  margin: 4px 0;
+}
+.nam {
+  color: #c62828;
+  font-size: 15px;
+}
+.thang {
+  color: #1565c0;
+  font-size: 18px;
+}
+.so-ngay {
+  color: #c62828;
+  font-size: 52px;
+  font-weight: bold;
+}
+.so-ngay {
+  color: #c62828;
+  font-size: 52px;
+  font-weight: bold;
+}
+.loi-chao {
+  color: #c62828;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  margin: 22px 0;
+}
+.form-nhap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 12px;
+  padding: 18px 12px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+.form-nhap div {
+  text-align: center;
+}
+.form-nhap input {
+  width: 66px;
+  margin-top: 4px;
+  padding: 5px 4px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-nhap button {
+  width: 50px;
+  padding: 10px 6px;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #ffffff;
+  background: #546e7a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

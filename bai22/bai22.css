@@ -1,0 +1,106 @@
+:root {
+  --nen: #f1f5f9;
+  --chu: #0f172a;
+  --chu-phu: #475569;
+  --the: #ffffff;
+  --vien: #e2e8f0;
+  --nhan: #2563eb;
+  --code: #e2e8f0;
+}
+body.toi {
+  --nen: #0b1220;
+  --chu: #f1f5f9;
+  --chu-phu: #cbd5e1;
+  --the: #131c2e;
+  --vien: #25314a;
+  --nhan: #60a5fa;
+  --code: #1e293b;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: var(--nen);
+  color: var(--chu);
+  transition:
+    background 0.4s,
+    color 0,
+    4s;
+}
+.trang {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 24px 28px;
+}
+.dau {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+h1 {
+  margin: 0;
+  font-size: 25px;
+}
+.gat {
+  position: relative;
+  width: 46px;
+  height: 26px;
+  cursor: pointer;
+}
+.gat input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.truot {
+  position: absolute;
+  inset: 0;
+  background: #94a3b8;
+  border-radius: 15px;
+  transition: background 0.4s;
+}
+.truot::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.gat input:checked + .truot {
+  background: var(--nhan);
+}
+
+.gat input:checked + .truot::after {
+  transform: translateX(20px);
+}
+
+.gat input:focus-visible + .truot {
+  outline: 2px solid var(--nhan);
+  outline-offset: 2px;
+}
+.the {
+  background: var(--the);
+  border: 1px solid var(--vien);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  transition:
+    background 0.4s,
+    border-color 0.4s;
+}
+.the h2 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--nhan);
+  transition: color 0.4s;
+}

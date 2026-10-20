@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Bài 12 - In lịch. Cần đặt bai12.html, bai12.css, bai12.js cùng một thư mục -->
+<html lang="vi">
+  <head>
+    <!-- Bảng mã UTF-8 để hiển thị đúng tiếng Việt -->
+    <meta charset="UTF-8" />
+    <!-- Giúp trang hiển thị đúng trên điện thoại -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 12 - In lịch</title>
+
+    <!-- Liên kết file CSS nằm cùng thư mục -->
+    <link rel="stylesheet" href="bai12.css" />
+  </head>
+  <body>
+    <div class="khung">
+      <!-- Ô lịch: JavaScript sẽ ghi nội dung vào các thẻ có id -->
+      <div class="o-lich">
+        <p class="nam" id="nam"></p>
+        <p class="thang" id="thang"></p>
+        <p class="so-ngay" id="ngay"></p>
+        <p class="thu" id="thu"></p>
+      </div>
+
+      <!-- Lời chào theo buổi -->
+      <p class="loi-chao" id="loiChao"></p>
+
+      <!-- Form nhập: 3 ô + 1 nút -->
+      <div class="form-nhap">
+        <div>Ngày<br /><input type="number" id="oNgay" /></div>
+        <div>Tháng<br /><input type="number" id="oThang" /></div>
+        <div>Năm<br /><input type="number" id="oNam" /></div>
+        <!-- type="button": bấm nút không làm tải lại trang -->
+        <button type="button" id="nutInLich">In lịch</button>
+      </div>
+    </div>
+
+    <!-- Liên kết file JavaScript, đặt cuối body: lúc này các thẻ ở trên đã có sẵn -->
+    <script src="bai12.js"></script>
+  </body>
+</html>

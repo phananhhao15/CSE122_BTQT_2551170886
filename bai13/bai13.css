@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 40px 16px;
+  background: #eeeeee;
+  font-family: "Times New Roman", Times, serif;
+}
+.khung {
+  max-width: 560px;
+  margin: 0 auto;
+}
+.dong-ho {
+  background: #000000;
+  border-radius: 14px;
+  padding: 30px 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+.loi-chao {
+  color: #c62828;
+  background: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  margin: 40px 0 0;
+  padding: 16px;
+  border-radius: 14px;
+}

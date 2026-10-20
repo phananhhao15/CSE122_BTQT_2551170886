@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bai20.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute">
+      <filter id="wave">
+        <feTurbulence
+          type="turbulence"
+          baseFrequency="0.02 0.05"
+          numOctaves="2"
+          result="noise"
+        />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" />
+      </filter>
+    </svg>
+    <div class="khung">
+      <img id="anh" src="../Anh/Bai20/hoahong.gif" alt="hoahong" />
+      <div class="chu">Special For You</div>
+      <div class="thanhNut" id="thanhNut">
+        <button data-fx="gray">Gray</button>
+        <button data-fx="xray">Xray</button>
+        <button data-fx="invert">Invert</button>
+        <button data-fx="fliph">FlipH</button>
+        <button data-fx="flipv">FlipV</button>
+        <button data-fx="glow">Glow</button>
+        <button data-fx="shadow">Shadow</button>
+        <button data-fx="bold">Bold Shadow</button>
+        <button data-fx="drop">DropShadow</button>
+        <button data-fx="blur">Blur</button>
+        <button data-fx="wave">Wave</button>
+        <button data-fx="mask">Mask</button>
+        <button data-fx="alpha">Alpha</button>
+      </div>
+    </div>
+    <script>
+      const anh = document.getElementById("anh");
+      const nuts = document.querySelectorAll("#thanhNut button");
+      nuts.forEach((nut) => {
+        nuts.addEventlistener("click", () => {
+          nut.forEach((n) => n.classList.remove("chon"));
+          nut.classList.add("chon");
+          anh.className = "fx-" + nut.dataset.fx;
+        });
+      });
+      nuts[0].click();
+    </script>
+  </body>
+</html>
