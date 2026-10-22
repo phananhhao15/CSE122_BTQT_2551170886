@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  background: #0b1120;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Vỏ máy tính */
+.may-tinh {
+  width: 100%;
+  max-width: 380px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #111827;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Màn hình: phép tính nhỏ + kết quả lớn, căn phải */
+.man-hinh {
+  background: #022c22;
+  color: #4ade80;
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+  overflow-wrap: anywhere;
+}
+.phep-tinh {
+  margin: 0 0 8px;
+  font-size: 20px;
+  opacity: 0.75;
+  min-height: 24px;
+}
+.ket-qua {
+  margin: 0;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+/* Bàn phím: lưới 4 cột */
+.ban-phim {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Nút số (mặc định) */
+.nut {
+  padding: 18px 0;
+  border: none;
+  border-radius: 10px;
+  background: #25313f;
+  color: #e5e7eb;
+  font-size: 22px;
+  cursor: pointer;
+  transition: filter 0.15s, transform 0.1s;
+}
+.nut:hover {
+  filter: brightness(1.2);
+}
+.nut:active {
+  transform: scale(0.95);
+}
+
+/* Nút phép tính ÷ × − + % ( ) */
+.nut-toan-tu {
+  background: #0d6efd;
+  color: #ffffff;
+}
+/* Nút C */
+.nut-xoa {
+  background: #dc2626;
+  color: #ffffff;
+}
+/* Nút = */
+.nut-bang {
+  background: #16a34a;
+  color: #ffffff;
+}
+/* Nút 0 chiếm 2 cột */
+.nut-0 {
+  grid-column: span 2;
+}
+
+/* Màn hình nhỏ: thu nhỏ khoảng cách và chữ */
+@media (max-width: 400px) {
+  .may-tinh {
+    padding: 16px;
+  }
+  .ban-phim {
+    gap: 8px;
+  }
+  .nut {
+    padding: 14px 0;
+    font-size: 20px;
+  }
+  .ket-qua {
+    font-size: 36px;
+  }
+}

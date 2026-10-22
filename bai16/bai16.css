@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 40px 16px;
+  background: #f3f4f6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+/* Thẻ ứng dụng */
+.ung-dung {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Tiêu đề nền tím */
+.tieu-de {
+  background: #6d28d9;
+  color: #ffffff;
+  padding: 22px 28px;
+}
+.tieu-de h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+.tieu-de p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Ô nhập + nút Thêm */
+.form-them {
+  display: flex;
+  gap: 12px;
+  padding: 20px 28px;
+  border-bottom: 1px solid #ede9fe;
+}
+.form-them input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+.form-them input:focus {
+  outline: none;
+  border-color: #6d28d9;
+}
+.form-them button {
+  padding: 0 22px;
+  background: #6d28d9;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.form-them button:hover {
+  background: #5b21b6;
+}
+
+/* Ẩn nhãn nhưng trình đọc màn hình vẫn đọc được */
+.an-di {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* Danh sách việc, kẻ nét đứt giữa các việc */
+.danh-sach {
+  list-style: none;
+  margin: 0;
+  padding: 0 28px;
+}
+.viec {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px dashed #ede9fe;
+  cursor: pointer;
+}
+
+/* Ô đánh dấu */
+.o-danh-dau {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #a78bfa;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+.ten-viec {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+/* Việc đã xong: ô tô tím, chữ gạch ngang */
+.viec.xong .o-danh-dau {
+  background: #6d28d9;
+  border-color: #6d28d9;
+}
+.viec.xong .ten-viec {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Nút xoá */
+.nut-xoa {
+  padding: 5px 12px;
+  background: #fde2e2;
+  color: #b91c1c;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nut-xoa:hover {
+  background: #fecaca;
+}
+
+/* Dòng đếm số việc còn lại */
+.dem-viec {
+  padding: 18px 28px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Màn hình nhỏ: giảm lề */
+@media (max-width: 480px) {
+  .tieu-de,
+  .form-them,
+  .dem-viec {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .danh-sach {
+    padding: 0 16px;
+  }
+}

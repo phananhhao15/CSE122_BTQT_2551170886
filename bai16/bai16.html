@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- Bài 16 - Danh sách việc cần làm. Cần đặt bai16.html, bai16.css, bai16.js cùng một thư mục -->
+<html lang="vi">
+  <head>
+    <!-- Bảng mã UTF-8 để hiển thị đúng tiếng Việt -->
+    <meta charset="UTF-8" />
+    <!-- Giúp trang hiển thị đúng trên điện thoại -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 16 - Danh sách việc cần làm</title>
+
+    <link rel="stylesheet" href="bai16.css" />
+  </head>
+  <body>
+    <main class="ung-dung">
+      <header class="tieu-de">
+        <h1>Danh sách việc cần làm</h1>
+        <p>Thêm việc mới, đánh dấu hoàn thành hoặc xoá — tất cả bằng JavaScript.</p>
+      </header>
+
+      <!-- Form nhập: bấm Thêm hoặc Enter đều thêm việc, JS chặn tải lại trang -->
+      <form class="form-them" id="formThem">
+        <label for="oNhap" class="an-di">Việc cần làm</label>
+        <input type="text" id="oNhap" placeholder="Nhập việc cần làm..." autocomplete="off" />
+        <button type="submit">Thêm</button>
+      </form>
+
+      <!-- Danh sách việc: JS tạo các thẻ <li> bên trong -->
+      <ul class="danh-sach" id="danhSach"></ul>
+
+      <footer class="dem-viec" id="demViec"></footer>
+    </main>
+
+    <!-- Đặt cuối body: lúc này các thẻ ở trên đã có sẵn -->
+    <script src="bai16.js"></script>
+  </body>
+</html>

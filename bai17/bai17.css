@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 40px 16px;
+  background: #fff7ed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+/* Thẻ form */
+.khung {
+  max-width: 560px;
+  margin: 0 auto;
+}
+.form-dang-ky {
+  background: #ffffff;
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 24px rgba(194, 65, 12, 0.08);
+}
+
+/* Tiêu đề */
+.form-dang-ky h1 {
+  margin: 0 0 4px;
+  color: #c2410c;
+  font-size: 26px;
+}
+.mo-ta {
+  margin: 0 0 20px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Mỗi nhóm: nhãn + ô nhập + thông báo */
+.nhom {
+  margin-bottom: 14px;
+}
+.nhom label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #374151;
+}
+.nhom input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.nhom input:focus {
+  outline: none;
+  border-color: #c2410c;
+}
+
+/* Ô sai: viền đỏ, nền hồng nhạt */
+.nhom input.loi {
+  border-color: #dc2626;
+  background: #fef2f2;
+}
+/* Ô hợp lệ: viền xanh */
+.nhom input.hop-le {
+  border-color: #16a34a;
+}
+
+/* Dòng thông báo dưới ô */
+.thong-bao {
+  margin: 6px 0 0;
+  min-height: 18px;
+  font-size: 14px;
+}
+.thong-bao.loi {
+  color: #dc2626;
+}
+.thong-bao.hop-le {
+  color: #16a34a;
+}
+
+/* Nút đăng ký */
+.nut-dang-ky {
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px;
+  background: #c2410c;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nut-dang-ky:hover {
+  background: #9a3412;
+}
+
+/* Thông báo đăng ký thành công */
+.ket-qua {
+  margin: 14px 0 0;
+  text-align: center;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+/* Màn hình nhỏ: giảm lề form */
+@media (max-width: 480px) {
+  .form-dang-ky {
+    padding: 20px 16px;
+  }
+}

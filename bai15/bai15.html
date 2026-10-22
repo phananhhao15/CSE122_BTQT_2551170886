@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- Bài 15 - Máy tính đơn giản. Cần đặt bai15.html, bai15.css, bai15.js cùng một thư mục -->
+<html lang="vi">
+  <head>
+    <!-- Bảng mã UTF-8 để hiển thị đúng tiếng Việt -->
+    <meta charset="UTF-8" />
+    <!-- Giúp trang hiển thị đúng trên điện thoại -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 15 - Máy tính đơn giản</title>
+
+    <link rel="stylesheet" href="bai15.css" />
+  </head>
+  <body>
+    <main class="may-tinh">
+      <!-- Màn hình: dòng trên là phép tính, dòng dưới là kết quả -->
+      <section class="man-hinh" aria-live="polite">
+        <p class="phep-tinh" id="phepTinh">&nbsp;</p>
+        <p class="ket-qua" id="ketQua">0</p>
+      </section>
+
+      <!-- Bàn phím lưới 4 cột x 5 hàng.
+           data-gia-tri: ký tự được thêm vào phép tính khi bấm -->
+      <section class="ban-phim">
+        <button type="button" class="nut nut-xoa" data-lenh="xoa">C</button>
+        <button type="button" class="nut nut-toan-tu" data-lenh="ngoac">( )</button>
+        <button type="button" class="nut nut-toan-tu" data-gia-tri="%">%</button>
+        <button type="button" class="nut nut-toan-tu" data-gia-tri="÷">÷</button>
+
+        <button type="button" class="nut" data-gia-tri="7">7</button>
+        <button type="button" class="nut" data-gia-tri="8">8</button>
+        <button type="button" class="nut" data-gia-tri="9">9</button>
+        <button type="button" class="nut nut-toan-tu" data-gia-tri="×">×</button>
+
+        <button type="button" class="nut" data-gia-tri="4">4</button>
+        <button type="button" class="nut" data-gia-tri="5">5</button>
+        <button type="button" class="nut" data-gia-tri="6">6</button>
+        <button type="button" class="nut nut-toan-tu" data-gia-tri="−">−</button>
+
+        <button type="button" class="nut" data-gia-tri="1">1</button>
+        <button type="button" class="nut" data-gia-tri="2">2</button>
+        <button type="button" class="nut" data-gia-tri="3">3</button>
+        <button type="button" class="nut nut-toan-tu" data-gia-tri="+">+</button>
+
+        <!-- Nút 0 chiếm 2 cột -->
+        <button type="button" class="nut nut-0" data-gia-tri="0">0</button>
+        <button type="button" class="nut" data-gia-tri=".">.</button>
+        <button type="button" class="nut nut-bang" data-lenh="bang">=</button>
+      </section>
+    </main>
+
+    <!-- Đặt cuối body: lúc này các nút ở trên đã có sẵn -->
+    <script src="bai15.js"></script>
+  </body>
+</html>
